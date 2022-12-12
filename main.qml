@@ -6,14 +6,12 @@ import QtMultimedia
 
 
 Window {
-    visible: true
-    width: 800
-    height: 600
+
+    visibility: Window.FullScreen
 
     Video {
         id: video
-        width : 800
-        height : 600
+        anchors.fill: parent
         source: "qrc:/splash.mp4"
         Component.onCompleted: {
             video.play()
