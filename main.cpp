@@ -1,6 +1,5 @@
 #include <QGuiApplication>
 #include <QQmlApplicationEngine>
-#include <QMediaPlayer>
 
 int main(int argc, char *argv[])
 {
@@ -14,14 +13,6 @@ int main(int argc, char *argv[])
             QCoreApplication::exit(-1);
     }, Qt::QueuedConnection);
     engine.load(url);
-
-
-    QMediaPlayer *player = new QMediaPlayer;
-
-
-    player->setSource(QUrl::fromLocalFile(":/PlayPodSplash/splash.mp4"));
-//    player->setVolume(10);
-    player->play();
 
     return app.exec();
 }

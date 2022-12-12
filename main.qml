@@ -1,8 +1,6 @@
 import QtQuick
 import QtQuick.Window
-import QtQuick.Layouts
 import QtMultimedia
-import QtQuick.Dialogs
 
 //Made by Adam Pedersen
 
@@ -19,7 +17,12 @@ Window {
         source: "qrc:/splash.mp4"
         Component.onCompleted: {
             video.play()
+
         }
+        onStopped: {
+            console.log("Milad Milad Mohammad")
+        }
+
     }
 
 }
