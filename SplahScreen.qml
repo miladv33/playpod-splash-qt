@@ -6,7 +6,7 @@ Item {
     anchors.fill: parent
 
     required property string url
-    signal finihed()
+    signal finished()
 
     Rectangle {
         anchors.fill: parent

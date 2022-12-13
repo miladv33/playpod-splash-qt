@@ -6,6 +6,9 @@ Window {
     visibility: Window.FullScreen
     SplahScreen {
         url:"qrc:/splash.mp4"
+        onFinished:{
+            console.log("finished")
+        }
     }
 
 }
