@@ -1,5 +1,7 @@
 <RCC>
     <qresource prefix="/">
         <file>splash.mp4</file>
+        <file>SplahScreen.qml</file>
+        <file>main.qml</file>
     </qresource>
 </RCC>
